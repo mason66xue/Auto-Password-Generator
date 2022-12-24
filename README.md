@@ -5,6 +5,11 @@
 
 This application meant to filter the requirement for user to generate password. Just by clicking on the button, the process of generating password will start. After confirm couple of prompts, the password will show in the box. 
 
+
+https://user-images.githubusercontent.com/117794323/209420733-0e80dc2a-19e7-4b98-99eb-d1d679a325e5.mp4
+
+
+
 ## Installation
 
 N/A
