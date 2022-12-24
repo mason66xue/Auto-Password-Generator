@@ -3,21 +3,23 @@ const generateBtn = document.querySelector('#generate');
 // const length =Number(prompt("Enter a number between 8 to 128 "));
 
 // assign variables
-const number=['0','1','2','3','4','5','6','7','8','9'];
-const specialCharacter=['!','@','#','$','%','^','*'];
-const upperCase=['A','B','C','D','E','F','G','H','I','J','K'];
-const  lowerCase=['a','b','c','d','e','f','g','h','i','j','k'];
+// const number=['0','1','2','3','4','5','6','7','8','9'];
+// const specialCharacter=['!','@','#','$','%','^','*'];
+// const upperCase=['A','B','C','D','E','F','G','H','I','J','K'];
+// const  lowerCase=['a','b','c','d','e','f','g','h','i','j','k'];
+
+const passwordMix=['0','1','2','3','4','5','6','7','8','9','!','@','#','$','%','^','*']
 
 
 // promt to confirm the length of the password 
 function generatePassword(){
 const confirmLength = Number(prompt(('How many password would you like to have? Password should between 8 to 128')));
-if(confirmLength >8 && confirmLength < 128){
+if(confirmLength >=8 && confirmLength <= 128){
     alert('please answer following questions')
 }
-else if(confirmLength < 8){
+else if(confirmLength <= 8){
     alert('please enter between 8 to 128 characters')
-}else(confirmLength >128)
+}else(confirmLength >=128)
 {
     alert('please enter between 8 to 128 characters')
 }
@@ -45,13 +47,25 @@ if(confirmLowerCase===false){
 }
 
 
-
-
+// const password=[]
+// for(let i=0; i<passwordMix.length; i++){
+//     const choice=passwordMix[Math.floor(Math.random() * passwordMix.length)];
+//     password.push(passwordMix);
+// }
 }
-
+// call back function generatePassword
 generatePassword();
 
-
+function userInput(){
+    const password=[]
+// for(let i=0; i<passwordMix.length; i++){
+    const choice=passwordMix[Math.floor(Math.random() * passwordMix.length)];
+    password.push(passwordMix);
+    document.getElementById('password').textContent = password;
+}
+// }
+//call back function userInput
+userInput();
 
 
 
