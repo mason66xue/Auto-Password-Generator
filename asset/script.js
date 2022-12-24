@@ -55,19 +55,4 @@ generatePassword();
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-generateBtn.addEventListener('click',)
+generateBtn.addEventListener('click', generatePassword);
