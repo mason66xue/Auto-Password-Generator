@@ -52,20 +52,22 @@ if(confirmLowerCase===false){
 //     const choice=passwordMix[Math.floor(Math.random() * passwordMix.length)];
 //     password.push(passwordMix);
 // }
+userInput(confirmLength);
 }
 // call back function generatePassword
-generatePassword();
 
-function userInput(){
+
+function userInput(length){
     const password=[]
-// for(let i=0; i<passwordMix.length; i++){
-    const choice=passwordMix[Math.floor(Math.random() * passwordMix.length)];
-    password.push(passwordMix);
-    document.getElementById('password').textContent = password;
+for(let i=0; i<length; i++){
+    const choice=Math.floor(Math.random() * passwordMix.length);
+    password.push(passwordMix[choice]);
+    
 }
-// }
+document.getElementById('password').textContent = password;
+}
 //call back function userInput
-userInput();
+// userInput();
 
 
 
